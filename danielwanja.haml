@@ -1,0 +1,88 @@
+---
+layout: application
+title:  AngularJS, iOS, Ruby on Rails and more
+---
+:css
+  section#main a {
+    text-decoration: underline;
+  }
+
+/ Header Title
+%section#header-title
+  .container
+    .row.animated.fadeInUpBig
+      .col-sm-12
+        %h2.white
+          Daniel
+          %span.color Wanja
+
+/ Main
+%section#main.white-bg
+  .container
+    .row
+      #cbp-so-scroller.cbp-so-scroller
+
+        %section.cbp-so-section
+          %article.cbp-so-side.cbp-so-side-left
+            %h3 I’m a coder
+            %p My name is Daniel Wanja. I’m passionate about software development and it has never been a better time to be a coder. The pace of innovation in the industry is picking up, social and consumer facing applications that you can hold in the palm of your hand are changing the way we interact with one other and will for the coming years change the face of the enterprise. From mobile to the cloud you now have more possibilities than ever to create awesome applications and thanks to my great customers I’m working with many teams on these new applications. I just love it!
+            %p I am a native of Switzerland, currently live in Denver, Colorado. I have lived in Denver for more than ten years with my wife and three children, and now also a dog. I am a dynamic, skilled enterprise software architect and developer with over 26 years experience. I have worked in the banking, insurance, and high-tech industries around the world delivering mission-critical software.
+          %figure.cbp-so-side.cbp-so-side-right
+            %img.img-responsive{alt: "AngularJS Development", src: "img/danielwanja/angularjs-large.png"}/
+
+        %section.cbp-so-section
+          %figure.cbp-so-side.cbp-so-side-left
+            %ul
+              %li{ style: "list-style-type:none;" }
+                %img.img-responsive{src: "img/danielwanja/360flexlogo.png", width: "130px"}/
+            %ul
+              %li{ style: "list-style-type:none;" }
+                %img.img-responsive{src: "img/danielwanja/MAX11_125x125_SPEAKER_dancers.jpeg"}/
+            %ul
+              %li{ style: "list-style-type:none;" }
+                %img.img-responsive{src: "img/danielwanja/rails2008_banner_speaker_125x125.gif"}/
+          %article.cbp-so-side.cbp-so-side-right
+            %h3 I'm a presenter
+            %p I love to share my experience on writing software and delight my audience with my thick swiss-french accent across local user groups and conferences.
+            %p
+              Checkout a few of
+              %a{href: "/screencasts.html"} my screencasts
+              such a
+              %a{href: "http://vimeo.com/29279457"} Flex With Ruby on Rails talk - An AdobeMax preview
+              and
+              %a{href: "/blog/2012/04/18/screencast-building-ipad-apps-with-flex/"} Building iPad Apps With Flex - 360Flex
+              to get a taste of it :-)
+            %p
+              You usually will find me at these Denver user groups:
+              %ul
+                %li{ style: "list-style-type:none;" }
+                  %a{href: "http://ria5280.org"} Denver RIA Developers Group
+                %li{ style: "list-style-type:none;" }
+                  %a{href: "http://rmaug.com/"} Rocky Mountain Adobe User Group
+                %li{ style: "list-style-type:none;" }
+                  %a{href: "http://groups.google.com/group/derailed"} DeRailed - Denver Rails UG
+
+
+        %section.cbp-so-section
+          %article.cbp-so-side.cbp-so-side-left
+            %h3 I'm a writer
+            %p
+              With my good friend
+              %a{href: "https://twitter.com/#!/thillerson"} Tony Hillerson
+              we undertook to write Flex on Rails...the book!.  It's not on the latest version of Flex and Ruby on Rails anymore but it still contains some useful information. You can find more information on the book's companion website
+              %a{href: "http://flexonrails.com/"} Flex and Rails
+            %p
+              To integrate Flex 4 and Rails 3 checkout my
+              %a{href: "https://github.com/danielwanja/activeresource"} ActiveResource Flex library
+              project on github.
+            %p To be clear, I'm more a coder than a writer, nevertheless writing a book was an exceptional experience.
+
+          %figure.cbp-so-side.cbp-so-side-right
+            %img.img-responsive{alt: "Flex on Rails - the book", src: "img/danielwanja/flexonrails_cover_small.jpg"}/
+
+
+
+%script{src: "js/cbpScroller.js"}
+%script{src: "js/classie.js"}
+:javascript
+  new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );

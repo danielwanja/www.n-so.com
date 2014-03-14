@@ -1,0 +1,10 @@
+!!!
+%html{lang: "en"}
+  {% convert_include head.haml %}
+  %body
+    {% convert_include navigation.haml %}
+
+    {{ content }}
+
+    {% convert_include bottom.haml %}
+    {% convert_include javascript.haml %}

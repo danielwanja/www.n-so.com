@@ -1,0 +1,46 @@
+!!!
+%html{lang: "en"}
+  {% convert_include head.haml %}
+  %body
+    {% convert_include navigation.haml %}
+    {% convert_include blog_header.haml %}
+
+    %section#main.gray-bg
+      .container
+        .row
+          .col-sm-8
+            %article.blog
+              == {% if page.image != null %}
+              %img.img-responsive{alt: "{{page.title}}", src: "{{ site.baseurl}}img/blog/{{page.image}}", width:"750px"}/
+              == {% endif %}
+              %h3 {{ page.title }}
+              .blog-meta.margin-20.dark-gray
+                .blog-meta-date
+                  %i.fa.fa-clock-o
+                  %span.blog-meta-date {{ page.date | date:"%-d %B %Y" }}
+                .blog-meta-author
+                  %i.fa.fa-user
+                  %a.blog-meta-author{href: "#"}
+                    == {% if page.author != null %}
+                    {{ page.author }}
+                    == {% else %}
+                    Daniel Wanja
+                    == {% endif %}
+                .blog-meta-comments
+                  %i.fa.fa-comments
+                  %a.blog-meta-comments{href: "#"} 4 comments
+                .blog-meta-tags
+                  %i.fa.fa-tags
+                  == {% for category in page.categories %}
+                  %a{href: "#"} {{ category }}
+                  == {% unless forloop.last %}/{% endunless %}
+                  == {% endfor %}
+              .blog-intro
+                {{ content }}
+                {% convert_include blog_social.haml %}
+                {% convert_include disqus.html %}
+
+    {% convert_include bottom.haml %}
+    {% convert_include javascript.haml %}
+
+

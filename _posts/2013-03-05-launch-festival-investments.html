@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Launch Festival Investments"
+date: 2013-03-05 23:45
+comments: true
+categories: startup
+image: 2013-03-05-launch-festival.jpg
+---
+
+Who is getting the most investments at the Lanch conference? Currently (March 6 12:25am) Zillabyte is in first place with $811K pledeged followed by a close second AdStage with $654K. See all companies...
+<p>
+Update March 6 8:85: Zillabyte still is in first place with $851K, now Jawfish Games is in 2nd place with $741K, and AdStage got relegated to third place with $661K
+
+<p/>
+See the whole list below:
+
+<!--more-->
+
+{% raw %}
+  <script src="/javascripts/angularjs/angular.js" ></script>
+  <script src="/javascripts/angularjs/ui-bootstrap-tpls-0.1.0.min.js" ></script>
+  <script src="/blog/data/launch.json" ></script>
+
+  <link rel="stylesheet" href="/javascripts/angularjs/bootstrap.css">
+  <script>
+    angular.module('myApp', ['ui.bootstrap']);
+
+    function StartupController($scope, $http) {
+      $scope.startups = launch['products'];
+
+      $scope.orderValueFunction = function(startup) {
+         return -startup.product.aggregate;
+      };            
+    }    
+    
+  </script>
+{% endraw %}
+
+
+{% raw %}
+<div ng-app>
+  
+  <input name="search" type="text" ng-model="search" class="search-query" placeholder="Search Companies">
+
+  <ul class="thumbnails" ng-controller="StartupController">
+
+    <li class="span4" ng-repeat="startup in startups | orderBy:orderValueFunction | filter:search" >
+      <div class="thumbnail" style="height:350px;overflow:auto;">
+        <h3>{{$index+1}}. {{startup.product.name}}</h3>
+        <h3>{{startup.product.aggregate | currency }}</h3>
+        <img ng-src="{{startup.product.image_url}}">
+        <p>{{startup.product.description}}</p>
+      </div>
+    </li>
+
+  </ul>
+
+</div>
+{% endraw %}

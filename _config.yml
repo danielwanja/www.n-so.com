@@ -1,0 +1,9 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+permalink: /blog/:year/:month/:day/:title
+exclude :  [ 'Gemfile' ,  'Gemfile.Lock' ]
+excerpt_separator: <!--more-->
+sass :
+  SYNTAX : sass     # SCSS | Sass
+  Style : compact   # nested | expanded | Compact | compressed

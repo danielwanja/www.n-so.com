@@ -1,0 +1,22 @@
+:javascript
+  //Backstretch
+  $(document).ready(function() {
+  $.backstretch([
+        "img/header1.jpg",
+        "img/header1.jpg"
+        ], {
+          fade: 400,
+          duration: 5000
+      });
+  });
+
+%section#header
+  .container
+    .row.header-info.margin-20
+      .col-sm-6.col-sm-offset-3.text-center.animated.fadeIn
+        %h1 Your AngularJS Partner
+        %hr/
+        %h3.white AngularJS, HTML5, iOS on top Ruby on Rails
+    .row.animated.fadeInUpBig
+      .col-sm-6.col-sm-offset-3.text-center
+        %a.btn.btn-primary.btn-lg{href: "#main"} Learn More

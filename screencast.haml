@@ -1,0 +1,27 @@
+---
+layout: application
+title: Screencasts
+---
+
+/ Header Title
+%section#header-title
+  .container
+    .row.animated.fadeInUpBig
+      .col-sm-12
+        %h2.white
+          Screen
+          %span.color Casts
+
+%section#main.gray-bg
+  .container
+    .roww.text-center
+      .col-sm-8.col-sm-offset-2
+        {% for screencast in site.data.screencasts %}
+        %ul.list-inline.filter
+          %li
+            %a{href: "{{ screencast.url }}"} {{ screencast.title }}
+        %iframe{ style: "display:block; max-width:100%; margin:0 auto;", allowfullscreen: "", frameborder: "0", height: "281", mozallowfullscreen: "", src: "{{ screencast.url }}", webkitallowfullscreen: "", width: "500"}
+        %br/
+        %br/
+        %br/
+        {% endfor %}

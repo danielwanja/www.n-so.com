@@ -1,0 +1,111 @@
+:javascript
+  $(document).ready(function() {
+    var owl = $("#work-carousel");
+
+    owl.owlCarousel({
+    autoPlay: 8000,
+    items : 2, //10 items above 1000px browser width
+    itemsDesktop : [1000,4], //5 items between 1000px and 901px
+    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+    itemsTablet: [600,1], //2 items between 600 and 0
+    itemsMobile : [0,1], // itemsMobile disabled - inherit from itemsTablet option
+    navigation : false,
+    pagination : true,
+    autoHeight : false
+    });
+  });
+
+:css
+  section#latest-work img.img-responsive {
+    width: 575px;
+    height: 380px;
+  }
+
+/ Latest Work
+%section#latest-work.gray-bg
+  .container
+    .row.margin-30
+      .col-sm-12.text-center
+        %h2 Latest Work
+    .row
+      .col-sm-12
+        #work-carousel.owl-carousel
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/08_NCAA-Vault.jpg"}/
+            %a{href: "http://vault.ncaa.com"}
+              %span.title
+                %span
+                  NCAA Vault
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info A Flex and Ruby on Rails Application. Build with Cameron for T3 Media just in time for March Madness. It was a pleasure working with Cameron on this highly visible  project which was a great success from the first day we released it with so many positive reviews.
+
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/07_T3MetadataEditor.jpg"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  T3 Metadata Editor
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info A lot of my work is for enterprises software that is hidden behind closed doors but since I started helping out T3 Media. I have a few visible apps under my belt. There was already the NCAA Vault and the ACC Vault and more recently the Australian Open built in conjunction with Tennis Australia. These Vaults allow to search through moments of these matches and games. And to capture all that metadata regarding games and movies they created a whole server side infrastructure but they also needed a pretty face for all that power and I got lucky to be one of the main coder on the T3 Metadata Editor.
+          / Project
+
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/09_AustralianOpen.jpg"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  Project Title
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/01_DigitalSeed.gif"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  Project Title
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/02_eBayDesktopBetaSignup.gif"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  Project Title
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/03_GatelysShopping.gif"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  Project Title
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+          / Project
+          .thumbs
+            %img.img-responsive{alt: "Image Title", src: "img/portfolio/10_Quiltivate.png"}/
+            %a{href: "portfolio-item.html"}
+              %span.title
+                %span
+                  Project Title
+                  %br/
+                  %i.fa.fa-minus.white
+                  %span.project-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      / End Col 12
+    / End Row

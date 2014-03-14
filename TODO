@@ -1,0 +1,47 @@
+GENERAL
+
+[ ] S3 or Github.io  (I like github.io for auto deploy)
+[ ] Remove jQuery and Add AngularJS every where
+[ ] 404 page (https://help.github.com/articles/custom-404-pages)
+
+INDEX
+
+[ ] Learn more link to Daniel Wanja or scroll down smoothly.
+[x] Provide description for AngularJS
+[x] Provide description for Ruby on Rails
+[x] Provide description for Agile
+[ ] latest works - Provide description for each project
+[ ] latest news -  add link to blog articles
+[ ] kinds words - update monica's picture
+[ ] Clients - add datalogix
+[x] footer - About Nouvelles Solutions - provide description paragraph
+[ ] footer - email signup - start a mailing list?
+[x] footer - Quicklinks point to the website
+
+SCREENCAST
+
+[ ] make an AngularJS by example screencast
+
+BLOG
+
+[ ] Check if I can make comments appear in the list
+[ ] Entry: ensure comment count is displayed
+[ ] Entry: ensure comment is at the bottom of the page (disqus)
+[ ] Add pagination
+[ ] AngularJS with Rails is a fake blog entry - add or fix it.
+[ ] Welcome to Jekyll is a fake blog entry. (Maybe describe how this is really done)
+[ ] Launch Festival Investments - enable AngularJS on that page.
+[ ] 67 Performance tips from Adobe - fix double count
+[ ] vault.ncaa.com : under the hood of a cool Flex project. - has character issue
+
+CONTACT
+
+[ ] Create form using wufoo (or google forms). Which one do I use
+[ ] Create form that works
+[ ] Add PGP public key for email encryption
+
+
+V1.1
+
+[ ] Remove jquery and use angularuibootstrap
+[ ] Create a portfolio page

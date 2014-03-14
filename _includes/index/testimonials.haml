@@ -1,0 +1,85 @@
+/ Testimonials
+%section#testimonials.white-bg
+  .container
+    .row.margin-30
+      .col-sm-12.text-center
+        %h2 Kind Words
+    .row
+      #kind-words.carousel.slide
+        / Wrapper for slides
+        .carousel-inner
+          .item.active
+            .row.margin-30
+              .col-sm-8.col-sm-offset-2
+                .row.margin-30
+                  .col-sm-3.text-center
+                    %img.img-circle.img-responsive{alt: "Title", src: "img/testimonial/danweiner.jpeg"}/
+                    %h5 Dan Weiner,
+                    %small{title: "Source Title"}
+                      %em
+                        VP, Product |
+                        %a.more{href: "#"} Placeable
+                  .col-sm-9.text-center
+                    %h3 “Great architect, developer and innovator!”
+                    %hr/
+                    %p Daniel is a great architect, developer and innovator. We’ve collaborated on a range of projects and he’s brought creativity and excellence to all his work.
+          / End Item
+
+          .item
+            / class of active since it's the first item
+            .row.margin-30
+              .col-sm-8.col-sm-offset-2
+                .row.margin-30
+                  .col-sm-3.text-center
+                    %img.img-circle.img-responsive{alt: "Title", src: "img/testimonial/davehoffman.jpg"}/
+                    %h5 Dave Hoffman,
+                    %small{title: "Source Title"}
+                      %em
+                        AVP |
+                        %a.more{href: "#"} Pinnacol Assurance
+                  .col-sm-9.text-center
+                    %h3 “Daniel always delivers on his commitments!”
+                    %hr/
+                    %p
+          / End Item
+          .item
+            .row.margin-30
+              .col-sm-8.col-sm-offset-2
+                .row.margin-30
+                  .col-sm-3.text-center
+                    %img.img-circle.img-responsive{alt: "Title", src: "img/testimonial/monicadonaldson.png"}/
+                    %h5 Monica Donaldson,
+                    %small{title: "Source Title"}
+                      %em
+                        Product Manager |
+                        %a.more{href: "#"} Pinnacol Assurance
+                  .col-sm-9.text-center
+                    %h3 “We love having you on the team and have learned so much from you!”
+                    %hr/
+                    %p Daniel I appreciate your ability to jump in and understand our business goals and offer innovative solutions. We love having you on the team and have learned so much from you. I appreciate all of your hard work. Thank You!
+          / End Item
+
+          .item
+            / Embedd your tweets below
+            .row.margin-30
+              .col-sm-10.col-sm-offset-1
+                .row.margin-30
+                  .col-sm-4
+                    %blockquote.twitter-tweet
+                      %a{href: "https://twitter.com/deraileddenver/status/410421778293342208"}
+                    %script{async: "", charset: "utf-8", src: "//platform.twitter.com/widgets.js"}
+                  .col-sm-4
+                    %blockquote.twitter-tweet
+                      %a{href: "https://twitter.com/bryanontheloose/status/367709978007597057"}
+                    %script{async: "", charset: "utf-8", src: "//platform.twitter.com/widgets.js"}
+                  .col-sm-4
+                    %blockquote.twitter-tweet
+                      %a{href: "https://twitter.com/eallam/status/407224825212858368"}
+                    %script{async: "", charset: "utf-8", src: "//platform.twitter.com/widgets.js"}
+          / End Item
+        / Controls
+        %a.left.carousel-control{"data-slide" => "prev", href: "#kind-words"}
+          %span.icon-prev
+        %a.right.carousel-control{"data-slide" => "next", href: "#kind-words"}
+          %span.icon-next
+    / End Row
