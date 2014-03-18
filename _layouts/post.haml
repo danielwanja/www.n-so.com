@@ -8,7 +8,7 @@
     %section#main.gray-bg
       .container
         .row
-          .col-sm-8
+          .col-sm-8.col-md-offset-2
             %article.blog
               == {% if page.image != null %}
               %img.img-responsive{alt: "{{page.title}}", src: "{{ site.baseurl}}img/blog/{{page.image}}", width:"750px"}/
