@@ -14,11 +14,23 @@
       / Section 2
       .col-sm-3.margin-40
         %h3 Email Sign Up
-        %form#email-signup.form-inline{role: "form"}
+        %form#email-signup.form-inline{role: "form", style: "display:none"}
           .form-group
             %input#inputEmail.form-control{placeholder: "Enter email", type: "email"}/
           %button.btn.btn-primary.btn-sm{type: "submit"}
             %i.fa.fa-chevron-right.fa-lg
+        :javascript
+          var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+        :javascript
+          var qlzcdfz070c9ad = new WufooForm();
+          qlzcdfz070c9ad.initialize({
+          'userName':'nouvellessolutions',
+          'formHash':'qlzcdfz070c9ad',
+          'autoResize':true,
+          'height':'247',
+          'header':'show',
+          'ssl': true});
+          qlzcdfz070c9ad.display();
         %p
           Fun news, tips and tricks on AngularJS from Nouvelles Solutions. You won’t regret it and we won’t spam you ...
       / Section 3

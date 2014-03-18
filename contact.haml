@@ -1,0 +1,80 @@
+---
+layout: application
+title:  AngularJS, iOS, Ruby on Rails and more
+---
+:css
+
+
+/ Header Title
+%section#header-title
+  .container
+    .row.animated.fadeInUpBig
+      .col-sm-12
+        %h2.white
+          Get In
+          %span.color Touch
+
+/ Main
+%section#main.gray-bg
+  .container
+    .row
+      / Contact Form
+      .col-sm-9
+        %h3 We Want To Hear From You
+        %p Do you have a great project idea? Need some technical problem solved? Have a deadline and need someone that can just jump right in and get things done? Or you just want to say hi! Please leave me a note.
+        %br/
+        :javascript
+          var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));
+        :javascript
+          var z7x3k1 = new WufooForm();
+          z7x3k1.initialize({
+          'userName':'nouvellessolutions',
+          'formHash':'z7x3k1',
+          'autoResize':true,
+          'height':'617',
+          'header':'show'});
+          z7x3k1.display();
+
+      / Side Bar
+      .col-sm-3
+        .margin-40
+          %h3 Business Hours
+          %p
+            %strong Monday-Friday:
+            9am to 7pm
+            %br/
+            %strong Saturday:
+            9am to 2pm
+            %br/
+            %strong Sunday:
+            Closed
+        .margin-40
+          %h3 Contact Info
+          .gray-box
+            %p
+              %i.fa.fa-phone.fa-lg
+              +1.303.800.4641
+          .color-box
+            %p
+              %a{href: "mailto:d@n-so.com"}
+                %i.fa.fa-envelope-o.fa-lg
+                d@n-so.com (Daniel Wanja)
+          %ul.list-inline.social-icons
+            %li
+              %a{href: "http://www.twitter.com/danielwanja"}
+                %i.fa.fa-twitter
+            %li
+              %a{href: "https://plus.google.com/+DanielWanja1"}
+                %i.fa.fa-google-plus
+            %li
+              %a{href: "https://github.com/danielwanja"}
+                %i.fa.fa-github
+            %li
+              %a{href: "http://www.linkedin.com/in/wanja"}
+                %i.fa.fa-linkedin
+            %li
+              %a{href: "http://vimeo.com/danielwanja"}
+                %i.fa.fa-vimeo-square
+  #map.transparent
+    %iframe{src: "https://mapsengine.google.com/map/embed?mid=zz97STWH2Xdw.k1Ub6IQmBy7A"}
+  / Bottom
