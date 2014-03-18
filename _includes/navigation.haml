@@ -8,30 +8,26 @@
         Home
         %span.icon
     %li
-      %a{href: "danielwanja.html"}
+      %a{href: "{{ site.baseurl}}danielwanja.html"}
         Daniel Wanja
         %span.icon
-    / %li
-    /   %a{href: "/portfolio.html"}
-    /     Portfolio
-    /     %span.icon
     %li
-      %a{href: "screencast.html"}
+      %a{href: "{{ site.baseurl}}screencast.html"}
         Screencast
         %span.icon
     %li
-      %a{href: "blog.html"}
+      %a{href: "{{ site.baseurl}}blog"}
         Blog
         %span.icon
     %li
-      %a{href: "contact.html"}
+      %a{href: "{{ site.baseurl}}contact.html"}
         Contact
         %span.icon
 
 .navbar.navbar-inverse.navbar-fixed-top
   / Include your brand here
   %a.navbar-brand{href: "index.html"}
-    %img.img-responsive{alt: "Logo", src: "img/logo.png", width: "45px"}/
+    %img.img-responsive{alt: "Logo", src: "{{ site.baseurl}}img/logo.png", width: "45px"}/
   %p
     %a{href: "index.html"}
       Nouvelles Solutions
