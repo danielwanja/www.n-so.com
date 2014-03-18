@@ -1,7 +1,6 @@
 GENERAL
 
-[ ] S3 or Github.io  (I like github.io for auto deploy)
-[ ] Remove jQuery and Add AngularJS every where
+[x] S3 or Github.io  (I like github.io for auto deploy)
 [ ] 404 page (https://help.github.com/articles/custom-404-pages)
 
 INDEX
@@ -11,23 +10,22 @@ INDEX
 [x] Provide description for Ruby on Rails
 [x] Provide description for Agile
 [ ] latest works - Provide description for each project
-[ ] latest news -  add link to blog articles
-[ ] kinds words - update monica's picture
-[ ] Clients - add datalogix
+[x] latest news -  add link to blog articles
 [x] footer - About Nouvelles Solutions - provide description paragraph
-[ ] footer - email signup - start a mailing list?
+[x] footer - email signup - start a mailing list? (or just wufoo form)
 [x] footer - Quicklinks point to the website
 
 SCREENCAST
 
-[ ] make an AngularJS by example screencast
 
 BLOG
 
+[ ] Is not centered
 [ ] Check if I can make comments appear in the list
 [ ] Entry: ensure comment count is displayed
 [ ] Entry: ensure comment is at the bottom of the page (disqus)
-[ ] Add pagination
+[x] Add pagination
+[x] Add archive
 [ ] AngularJS with Rails is a fake blog entry - add or fix it.
 [ ] Welcome to Jekyll is a fake blog entry. (Maybe describe how this is really done)
 [ ] Launch Festival Investments - enable AngularJS on that page.
@@ -36,12 +34,17 @@ BLOG
 
 CONTACT
 
-[ ] Create form using wufoo (or google forms). Which one do I use
-[ ] Create form that works
-[ ] Add PGP public key for email encryption
-
+[x] Create form using wufoo (or google forms). Which one do I use
+[x] Create form that works
 
 V1.1
+[ ] kinds words - update monica's picture
+[ ] Clients - add datalogix
+[ ] make an AngularJS by example screencast
 
+V1.2
+
+[ ] Add PGP public key for email encryption
 [ ] Remove jquery and use angularuibootstrap
+[ ] Remove jQuery and Add AngularJS everywhere
 [ ] Create a portfolio page
