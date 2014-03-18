@@ -1,0 +1,26 @@
+!!!
+%html{lang: "en"}
+  {% convert_include head.haml %}
+  %body
+    {% convert_include navigation.haml %}
+
+    / Header Title
+    %section#header-title
+      .container
+        .row.animated.fadeInUpBig
+          .col-sm-12
+            %a{ href: "/blog.html" }
+              %h2.white
+                AngularJS
+                %span.color
+                  Blog Archive
+
+    %section#main.gray-bg
+      .container
+        .roww.text-center
+          .col-sm-8.col-sm-offset-2
+            {{ content }}
+            {% convert_include disqus.html %}
+
+    {% convert_include bottom.haml %}
+    {% convert_include javascript.haml %}
