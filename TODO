@@ -1,49 +1,27 @@
-GENERAL
+PRE-PROD
 
-[x] S3 or Github.io  (I like github.io for auto deploy)
-[ ] 404 page (https://help.github.com/articles/custom-404-pages)
-
-INDEX
-
-[ ] Learn more link to Daniel Wanja or scroll down smoothly.
-[x] Provide description for AngularJS
-[x] Provide description for Ruby on Rails
-[x] Provide description for Agile
+[ ] Move to S3
+[ ] 404 page (s3:? github:https://help.github.com/articles/custom-404-pages)
 [ ] latest works - Provide description for each project
-[x] latest news -  add link to blog articles
-[x] footer - About Nouvelles Solutions - provide description paragraph
-[x] footer - email signup - start a mailing list? (or just wufoo form)
-[x] footer - Quicklinks point to the website
-
-SCREENCAST
-
-
-BLOG
-
-[ ] Is not centered
 [ ] Check if I can make comments appear in the list
 [ ] Entry: ensure comment count is displayed
 [ ] Entry: ensure comment is at the bottom of the page (disqus)
-[x] Add pagination
-[x] Add archive
 [ ] AngularJS with Rails is a fake blog entry - add or fix it.
 [ ] Welcome to Jekyll is a fake blog entry. (Maybe describe how this is really done)
 [ ] Launch Festival Investments - enable AngularJS on that page.
+
+
+POST PROD
+[ ] update latest news
 [ ] 67 Performance tips from Adobe - fix double count
 [ ] vault.ncaa.com : under the hood of a cool Flex project. - has character issue
-
-CONTACT
-
-[x] Create form using wufoo (or google forms). Which one do I use
-[x] Create form that works
-
-V1.1
 [ ] kinds words - update monica's picture
-[ ] Clients - add datalogix
-[ ] make an AngularJS by example screencast
+
 
 V1.2
 
+[ ] make an AngularJS by example screencast
+[ ] Clients - add datalogix
 [ ] Add PGP public key for email encryption
 [ ] Remove jquery and use angularuibootstrap
 [ ] Remove jQuery and Add AngularJS everywhere
