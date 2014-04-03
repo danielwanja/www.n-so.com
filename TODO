@@ -2,28 +2,24 @@ PRE-PROD
 
 [x] Launch Festival Investments - enable AngularJS on that page.
 [x] latest works - Provide description for each project
-[x] AngularJS with Rails is a fake blog entry - add or fix it.
-[ ] Welcome to Jekyll is a fake blog entry. (Maybe describe how this is really done)
+[x] Add customers Datalogix, Placeable.com
+[x] Move to S3
+[x] 404 page (s3:? github:https://help.github.com/articles/custom-404-pages)
+[x] Welcome to Jekyll blog post
+
+
+V1.1
+[ ] https://github.com/laurilehmijoki/s3_website
+[ ] angularjs with Rails blog post
+[ ] Index: learn more...make a smooth scroll
+
 [ ] Check if I can make comments appear in the list
 [ ] Entry: ensure comment count is displayed
 [ ] Entry: ensure comment is at the bottom of the page (disqus)
-[x] Add customers Datalogix, Placeable.com
-[x] Move to S3
-[ ] 404 page (s3:? github:https://help.github.com/articles/custom-404-pages)
-
-
-POST PROD
-[x] update latest news
-[x] 67 Performance tips from Adobe - fix double count
-[x] vault.ncaa.com : under the hood of a cool Flex project. - has character issue
-[x] kinds words - update monica's picture
-
 
 V1.2
 
 [ ] make an AngularJS by example screencast
-[ ] Clients - add datalogix
 [ ] Add PGP public key for email encryption
 [ ] Remove jquery and use angularuibootstrap
-[ ] Remove jQuery and Add AngularJS everywhere
 [ ] Create a portfolio page
