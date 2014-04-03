@@ -17,8 +17,6 @@ See the whole list below:
 <!--more-->
 
 {% raw %}
-  <script src="/javascripts/angularjs/angular.js" ></script>
-  <script src="/javascripts/angularjs/ui-bootstrap-tpls-0.1.0.min.js" ></script>
   <script src="/blog/data/launch.json" ></script>
 
   <link rel="stylesheet" href="/javascripts/angularjs/bootstrap.css">
@@ -30,30 +28,31 @@ See the whole list below:
 
       $scope.orderValueFunction = function(startup) {
          return -startup.product.aggregate;
-      };            
-    }    
-    
+      };
+    }
+
   </script>
 {% endraw %}
 
 
 {% raw %}
-<div ng-app>
-  
+<div class="container" ng-app>
   <input name="search" type="text" ng-model="search" class="search-query" placeholder="Search Companies">
-
-  <ul class="thumbnails" ng-controller="StartupController">
-
-    <li class="span4" ng-repeat="startup in startups | orderBy:orderValueFunction | filter:search" >
-      <div class="thumbnail" style="height:350px;overflow:auto;">
-        <h3>{{$index+1}}. {{startup.product.name}}</h3>
-        <h3>{{startup.product.aggregate | currency }}</h3>
-        <img ng-src="{{startup.product.image_url}}">
-        <p>{{startup.product.description}}</p>
-      </div>
-    </li>
-
-  </ul>
-
-</div>
+  <br/>
+  <div class="row-fluid">
+    <div class="col-sm-12">
+      <ul class="col-sm-4" ng-controller="StartupController">
+          <li class="thumbnail" style="height:350px;overflow:auto;"
+               ng-repeat="startup in startups | orderBy:orderValueFunction | filter:search">
+            <h3>{{$index+1}}. {{startup.product.name}}</h3>
+            <h3>{{startup.product.aggregate | currency }}</h3>
+            <img ng-src="{{startup.product.image_url}}">
+            <div class="caption">
+              <p>{{startup.product.description}}</p>
+            </div>
+          </li> <!-- thumbnail -->
+      </ul> <!-- controller -->
+    </div> <!-- col-sm-12 -->
+  </div> <!-- row -->
+</div> <!-- container -->
 {% endraw %}
