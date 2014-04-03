@@ -13,9 +13,8 @@ V1.1
 [ ] angularjs with Rails blog post
 [ ] Index: learn more...make a smooth scroll
 
-[ ] Check if I can make comments appear in the list
 [ ] Entry: ensure comment count is displayed
-[ ] Entry: ensure comment is at the bottom of the page (disqus)
+[x] Entry: ensure comment is at the bottom of the page (disqus)
 
 V1.2
 

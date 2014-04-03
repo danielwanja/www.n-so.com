@@ -5,6 +5,11 @@
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://n-so.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        var dsq_counter = document.createElement('script'); dsq_counter.async = true; dsq_counter.type = 'text/javascript';
+        dsq_counter.src = 'http://n-so.disqus.com.disqus.com/count.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq_counter);
+
     })();
 </script>
 {% endif %}

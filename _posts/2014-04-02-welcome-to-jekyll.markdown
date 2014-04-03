@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date: 2014-02-03 11:00
+date: 2014-04-02 11:00
 categories: jekyll update
 comments: true
 author: Daniel Wanja

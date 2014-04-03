@@ -28,7 +28,8 @@
                     == {% endif %}
                 .blog-meta-comments
                   %i.fa.fa-comments
-                  %a.blog-meta-comments{href: "#"} 4 comments
+                  %a.blog-meta-comments.dsq-comment-count.comment-link.commentslink{ href: "#disqus_thread" }
+                    Comments
                 .blog-meta-tags
                   %i.fa.fa-tags
                   == {% for category in page.categories %}
