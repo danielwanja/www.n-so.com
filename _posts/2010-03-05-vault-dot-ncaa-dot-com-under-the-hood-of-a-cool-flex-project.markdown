@@ -8,13 +8,13 @@ categories: flex
 
 <div style="text-align:center;"><img src="http://onrails.org/files/vault.png" alt="vault.png" border="0" width="350" height="378" /></div>
 
-<a href="http://www.thoughtequity.com">Thought Equity Motion</a> and <a href="http://www.ncaa.com/">NCAA</a> two days ago officially released the <a href="http://vault.ncaa.com/">Ncaa Vault</a>. A cool Flex app backed by an incredible video database with awesome metedata about each game...and released just in time for March Madness. 
+<a href="http://www.thoughtequity.com">Thought Equity Motion</a> and <a href="http://www.ncaa.com/">NCAA</a> two days ago officially released the <a href="http://vault.ncaa.com/">Ncaa Vault</a>. A cool Flex app backed by an incredible video database with awesome metedata about each game...and released just in time for March Madness.
 
 Here are a few of the announcements and online articles describing the services:
 
 <!--more-->
 
-* <a href="http://www.thoughtequity.com/video/shell/txp/ncaa-and-thought-equity-motion-unveil-first-ever-video-powered-vault-for-ncaa-march-madness.do?title=NCAAÂ®%20and%20Thought%20Equity%20Motion%20Unveil%20First%20Ever%20Video-Powered%20Vault%20for%20NCAA%20March%20MadnessÂ®?title=NCAAÂ®%20and%20Thought%20Equity%20Motion%20Unveil%20First%20Ever%20Video-Powered%20Vault%20for%20NCAA%20March%20MadnessÂ®&mkid=tw_3-3-10">NCAAÂ® and Thought Equity Motion Unveil First Ever Video-Powered Vault for NCAA March MadnessÂ®</a> - by Thought Equity
+* <a href="http://fs.ncaa.org/Docs/PressArchive/2010/20100303+thought+equity+march+madness+rls.htm">NCAA and Thought Equity Motion Unveil First Ever Video-Powered Vault for NCAA March Madness</a> - by NCAA
 * <a href="http://www.nytimes.com/2010/03/03/sports/ncaabasketball/03ncaa.html">N.C.A.A. Tournament Goes Online, Clip by Clip</a> - by the New York Times
 * <a href="http://www.wired.com/playbook/2010/03/say-hello-to-the-ncaa-vault-adieu-to-productivity/#ixzz0hGq1bpTzhttp://www.wired.com/playbook/2010/03/say-hello-to-the-ncaa-vault-adieu-to-productivity/">Say Hello to NCAA Vault, Adieu to Productivity</a> - by Wired
 
@@ -22,9 +22,9 @@ In fact with the Vault you can have a URL right into a specific moment of any ga
 
 The twittersphere feedback is also <a href="http://search.twitter.com/search?q=vault+ncaa">pretty impressive</a>.
 
-This is the most visible Flex app I worked on :-) Late January <a href="http://twitter.com/theaboutbox">Cameron Pope</a> contacted me to ask if I could help on a Flex project for NCAA and Thought Equity. The funny part is that I didn't know that Cameron was such a great Flex developer, I met him via the Denver Ruby on Rails User Group (derailed) and I also didn't know what NCAA was (don't shoot, I didn't grow up in the US and we don't have TV). So when I asked my father in law about NCAA and realized it was about Basketball I was intrigued by what type of application we needed to build. Cameron showed me the mockups built by Donny Wells which is just an awesome graphical designer. These mockups where just incredible and then I was presented the video service technology the Thought Equity Motion team put together, and I was just blown away and though that this would be a cool project to work on. 
+This is the most visible Flex app I worked on :-) Late January <a href="http://twitter.com/theaboutbox">Cameron Pope</a> contacted me to ask if I could help on a Flex project for NCAA and Thought Equity. The funny part is that I didn't know that Cameron was such a great Flex developer, I met him via the Denver Ruby on Rails User Group (derailed) and I also didn't know what NCAA was (don't shoot, I didn't grow up in the US and we don't have TV). So when I asked my father in law about NCAA and realized it was about Basketball I was intrigued by what type of application we needed to build. Cameron showed me the mockups built by Donny Wells which is just an awesome graphical designer. These mockups where just incredible and then I was presented the video service technology the Thought Equity Motion team put together, and I was just blown away and though that this would be a cool project to work on.
 
-Cameron was the main Flex developer and I just worked part time on Monday's on this project. If you need and incredible Flex developer just contact Cameron. 
+Cameron was the main Flex developer and I just worked part time on Monday's on this project. If you need and incredible Flex developer just contact Cameron.
 
 Now let's dive more into the Flex nitty-gritty details:
 
@@ -43,7 +43,7 @@ So each line of the timelime is rendered by the TimeLineItemRender and you can j
 The we can set the style name accordingly based on the play's start time and the current playhead position:
 
 <pre>
-   styleName="{data.startTime < vaultModel.playheadPosition ? 'past' : 'future'}" 
+   styleName="{data.startTime < vaultModel.playheadPosition ? 'past' : 'future'}"
 </pre>
 
 The style of the application was created by the designer and Cameron did a great job reproducing it using <a href="http://www.degrafa.org/">Degrapha</a> for skinning () using an approach similar to this <a href="http://www.degrafa.org/source/ButtonLoader/ButtonLoader.html">example</a> (example <a href="http://www.degrafa.org/source/ButtonLoader/srcview/index.html">source</a>)
