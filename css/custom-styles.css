@@ -1,10 +1,32 @@
 /* ==========================================================================
    Insert Your Custom Styles Below. All styles located in this file will
    override existing main.css stylesheets.
-   ========================================================================== */ 
-
+   ========================================================================== */
+section#main a {
+  text-decoration: underline;
+}
 
 .navbar p {
   margin-top: 25px;
   font-size: 24px;
+}
+
+.navbar-brand {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navbar-header {
+  white-space:nowrap;
+}
+
+@media (max-width: 500px) {
+
+  .navbar-header .title {
+    display: none;
+  }
+
+  #nav-expander {
+    width: 35px;
+    padding-left: 10px;
+  }
 }
