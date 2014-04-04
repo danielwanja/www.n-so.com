@@ -3,7 +3,7 @@
     var owl = $("#work-carousel");
 
     owl.owlCarousel({
-    autoPlay: 8000,
+    autoPlay: 5000,
     items : 2, //10 items above 1000px browser width
     itemsDesktop : [1000,4], //5 items between 1000px and 901px
     itemsDesktopSmall : [900,2], // betweem 900px and 601px
@@ -11,7 +11,8 @@
     itemsMobile : [0,1], // itemsMobile disabled - inherit from itemsTablet option
     navigation : false,
     pagination : true,
-    autoHeight : false
+    autoHeight : true,
+    stopOnHover: true
     });
   });
 
@@ -33,7 +34,7 @@
           / Project
           .thumbs
             %img.img-responsive{alt: "NCAA Vault", src: "img/portfolio/08_NCAA-Vault.jpg"}/
-            %a{href: "http://vault.ncaa.com"}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   NCAA Vault
@@ -47,11 +48,12 @@
                     %br/
                     %br/
                     Technology: Flex and Ruby On Rails
-
+                    %br/
+                    Site: http://vault.ncaa.com
           / Project
           .thumbs
             %img.img-responsive{alt: "T3 Metadata Editor", src: "img/portfolio/07_T3MetadataEditor.jpg"}/
-            %a{href: "http://www.t3media.com/platform/products/metadata-editor/"}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   T3 Metadata Editor
@@ -62,12 +64,14 @@
                     %br/
                     %br/
                     Technology: Flex
+                    %br/
+                    Site: http://www.t3media.com/platform/products/metadata-editor/
           / Project
 
           / Project
           .thumbs
             %img.img-responsive{alt: "Australian Open TV Vault", src: "img/portfolio/09_AustralianOpen.jpg"}/
-            %a{href: "http://vault.australianopentv.com"}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   Australian Open TV Vault
@@ -84,11 +88,13 @@
                     %br/
                     %br/
                     Technology: Flex, Flash Catalyst, Ruby on Rails
+                    %br
+                    Site: http://vault.australianopentv.com
 
 
           .thumbs
             %img.img-responsive{alt: "Digital Seed", src: "img/portfolio/01_DigitalSeed.gif"}/
-            %a{href: "http://digital-seed.com/"}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   Digital Seed
@@ -100,11 +106,13 @@
                     %br/
                     %br/
                     Technology: Ruby on Rails
+                    %br
+                    Site: http://digital-seed.com/
 
           / Project
           .thumbs
             %img.img-responsive{alt: "eBay Desktop beta signup", src: "img/portfolio/02_eBayDesktopBetaSignup.gif"}/
-            %a{href: ""}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   eBay Desktop beta signup
@@ -119,7 +127,7 @@
           / Project
           .thumbs
             %img.img-responsive{alt: "Gatelys Shopping", src: "img/portfolio/03_GatelysShopping.gif"}/
-            %a{href: ""}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   Gatelys Shopping
@@ -134,7 +142,7 @@
           / Project
           .thumbs
             %img.img-responsive{alt: "Quiltivate", src: "img/portfolio/10_Quiltivate.png"}/
-            %a{href: "quiltivate.com"}
+            %a{href: "", onclick: "return false"}
               %span.title
                 %span
                   Quiltivate
@@ -145,6 +153,8 @@
                     %br/
                     %br/
                     Technology: Flex, JavaScript, Ruby on Rails
+                    %br/
+                    Site: http://quiltivate.com
 
       / End Col 12
     / End Row
