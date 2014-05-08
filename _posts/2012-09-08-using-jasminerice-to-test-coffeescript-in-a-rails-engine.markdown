@@ -6,16 +6,35 @@ comments: true
 categories: rails
 ---
 
-[Jasmine](http://pivotal.github.com/jasmine/) is a behavior-driven development framework for testing JavaScript and CoffeeScript code. I wanted to use it to test CoffeeScript for a Rails Engine I am working on. Enters 
-[Jasminerice](https://github.com/bradphelan/jasminerice) a gem that let's you add Jasmine tests to your Rails application. From it's website Jasminerice takes "full advantage of the Rails 3.1 asset pipeline. Jasminerice removes any excuse YOU have for not testing your out of control sprawl of CoffeeScript files.".  This said out of the box the Jasminerice  gem does not support Rails Engines. It's a Rails Engine itself, but from their website [they say](https://github.com/bradphelan/jasminerice/issues/40) "Unfortunately this is currently not working when used in a mountable engine.".
+<strong>UPDATE:</strong> Use [teaspoon](https://github.com/modeset/teaspoon) now
+to integrate Jasmine with your Rails app and Rails engine.
 
-So I looked under the hood of the gem and found that with a couple of fixes you can get it working with a Rails Engine.
+
+[Jasmine](http://pivotal.github.com/jasmine/) is a behavior-driven development
+framework for testing JavaScript and CoffeeScript code. I wanted to use it to
+test CoffeeScript for a Rails Engine I am working on. Enters
+[Jasminerice](https://github.com/bradphelan/jasminerice) a gem that let's you
+add Jasmine tests to your Rails application. From it's website Jasminerice takes
+"full advantage of the Rails 3.1 asset pipeline. Jasminerice removes any excuse
+YOU have for not testing your out of control sprawl of CoffeeScript files.".
+This said out of the box the Jasminerice  gem does not support Rails Engines.
+It's a Rails Engine itself, but from their website [they
+say](https://github.com/bradphelan/jasminerice/issues/40) "Unfortunately this is
+currently not working when used in a mountable engine.".
+
+So I looked under the hood of the gem and found that with a couple of fixes you
+can get it working with a Rails Engine.
 
 <!--more-->
 
-Ideally I will create a pull request and have Jasminerice work for plain Rails apps and for Rails Engine. For now you can follow these instructions to get it working with your Engine. Please let me know if you find a nicer/simpler way to test your Rails Engines with Jasmine.
+Ideally I will create a pull request and have Jasminerice work for plain Rails
+apps and for Rails Engine. For now you can follow these instructions to get it
+working with your Engine. Please let me know if you find a nicer/simpler way to
+test your Rails Engines with Jasmine.
 
-The main difference is that in a Rails Engine all your Rails classes and Java/CoffeeScript are namespaced and you need to tell Jasminerice to look in a few different places.
+The main difference is that in a Rails Engine all your Rails classes and
+Java/CoffeeScript are namespaced and you need to tell Jasminerice to look in a
+few different places.
 
 ###### Enabling Jasminerice for you engines
 
@@ -63,7 +82,7 @@ spec/javascripts/spec.js.coffee
 #= require jquery
 #= require jquery_ujs
 #= require jquery.ui.all
-#= require_tree . 
+#= require_tree .
 jasmine.getFixtures().fixturesPath = 'fixtures'
 ```
 
