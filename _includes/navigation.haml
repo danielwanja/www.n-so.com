@@ -28,9 +28,11 @@
   / Include your brand here
   %a.navbar-brand{href: "index.html"}
     %img.img-responsive{alt: "Logo", src: "{{ site.baseurl}}img/logo.png", width: "45px"}/
-  %p
-    %a{href: "{{ site.baseurl}}index.html", style: "text-decoration:none" }
+  %p{ style: "text-align: center; width:100%" }
+    %a{href: "{{ site.baseurl}}index.html", style: "text-decoration:none; float:left;" }
       Nouvelles Solutions
+    %span{ style: "float:right; margin-right:150px;" }
+      call us: 1.844.ANGULAR
   .navbar-header.pull-right
     %a#nav-expander.nav-expander.fixed
       %span.title MENU  
