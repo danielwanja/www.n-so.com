@@ -46,8 +46,10 @@ title: AngularJS and related Blog
         <p>
           {{ post.excerpt }}
         </p>
+        {% unless post.nomore %}
         <br />
         <a href="{{post.url}}" class="btn btn-primary btn-sm">Read More</a>
+        {% endunless %}
       </div>
     </article>
 {% endfor %}

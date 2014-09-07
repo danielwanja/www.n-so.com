@@ -7,13 +7,12 @@ comments: true
 author: Daniel Wanja
 image: 2014-02-03-wellcome-to-jekyll.jpg
 ---
-
-<a href="https://github.com/danielwanja/www.n-so.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-
 Oops, I did it again. I'm talking about using a new blog engine. I started with Typo, migrated to several hosts over the years, used octopress, and now I moved straight to using [jekyll](http://jekyllrb.com). In this post I'll show you the behind the scenes and you will also find the source code of this site.
 
 
 <!--more-->
+
+<a href="https://github.com/danielwanja/www.n-so.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
 This [github](https://github.com/danielwanja/www.n-so.com) repo is the CMS for my website and blog and is built using [jekyll](http://jekyllrb.com/).
 
